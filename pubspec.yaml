@@ -1,0 +1,54 @@
+name: clearsay
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  webview_flutter: ^4.4.1
+  connectivity_plus: ^6.0.3
+  url_launcher: ^6.2.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.0
+
+flutter_launcher_icons:
+  image_path: "assets/icon/app_icon.png"
+  android: true
+  ios: true
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/splash/splash_image.png
+  branding: assets/splash/splash_image.png
+  branding_bottom_padding: 24
+  color_dark: "#ffffff"
+  image_dark: assets/splash/splash_image.png
+  branding_dark: assets/splash/splash_image.png
+
+  android_12:
+    image: assets/splash/splash_image.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/splash/splash_image.png
+    icon_background_color_dark: "#ffffff"
+
+    web: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/app_icon.png
+    - assets/splash/splash_image.png
